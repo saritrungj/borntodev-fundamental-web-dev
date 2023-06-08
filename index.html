@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Let Healthy - เครื่องมือคำนวณค่าดัชนีมวลกายและอัตราการเผาผลาญพลังงาน</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <img class="logo-web center" src="img/logo2.png">
+            </div> <!-- End of image-logo-web -->
+            <div class="banner-image col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                <div class="banner-text">
+                    <h1>BMI คือ? </h1>
+                </div>
+            </div> <!-- End of banner-image -->
+            <div class="content-bmi center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                <br>
+                <span style="font-size: 30px;font-weight: bold;"> BMI </span> ย่อมาจาก (Body Mass Index : BMI)
+                คือเป็นมาตรการที่ใช้ประเมินภาวะอ้วนและผอมในผู้ใหญ่
+                ตั้งแต่อายุ 20 ปีขึ้นไป สามารถทำได้โดยการชั่งน้ำหนักตัวเป็นกิโลกรัม และวัดส่วนสูงเป็นเซนติเมตร
+                แล้วนำมาหาดัชมีมวลกาย โดยใช้โปรแกรมวัดค่าความอ้วนข้างต้น
+                <br><br>
+                <table class="table-bmi table table-bordered border border-dark">
+                    <thead>
+                        <tr class="table-dark border border-dark">
+                            <th>BMI</th>
+                            <th>อยู่ในเกณฑ์</th>
+                            <th>ภาวะเสี่ยงต่อโรค</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-success border border-dark">
+                            <td>น้อยกว่า 18.50</td>
+                            <td>น้ำหนักน้อย / ผอม</td>
+                            <td>มากกว่าคนปกติ</td>
+                        </tr>
+                        <tr class="table-success border border-dark">
+                            <td>ระหว่าง 18.50 - 22.90</td>
+                            <td>ปกติ (สุขภาพดี)</td>
+                            <td>เท่าคนปกติ</td>
+                        </tr>
+                        <tr class="table-warning border border-dark">
+                            <td>ระหว่าง 23 - 24.90</td>
+                            <td>ท้วม / โรคอ้วนระดับ 1</td>
+                            <td>อันตรายระดับ 1</td>
+                        </tr>
+                        <tr class="table-danger border border-dark">
+                            <td>ระหว่าง 25 - 29.90</td>
+                            <td>อ้วน / โรคอ้วนระดับ 2</td>
+                            <td>อันตรายระดับ 2</td>
+                        </tr>
+                        <tr class="table-danger border border-dark">
+                            <td>มากกว่า 30</td>
+                            <td>อ้วน / โรคอ้วนระดับ 3</td>
+                            <td>อันตรายระดับ 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- End of content-bmi -->
+            <div class="form-bmi center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                <form action="">
+                    <div class="center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                        <label for="inputWeight" class="form-label">น้ำหนัก (kg.)</label>
+                        <input type="number" class="form-control" id="inputWeight" name="inputWeight" min="1" max="999"
+                            maxlength="3" autocomplete="off">
+                    </div>
+                    <div class="center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                        <label for="inputHeight" class="form-label">ส่วนสูง (cm.)</label>
+                        <input type="number" class="form-control" id="inputHeight" name="inputHeight" min="1" max="999"
+                            maxlength="3" autocomplete="off">
+                    </div>
+                    <div class="center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                        <input type="submit" class="btnHover input-form form-control" value="Calculate">
+                    </div>
+                    <div class="result-bmi center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                        <label for="">BMI ของคุณคือ</label>
+                        <p>0</p>
+                    </div>
+                </form>
+            </div> <!-- End of form-bmi -->
+            <div class="banner-image-2 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                <div class="banner-text">
+                    <h1>BMR และ TDEE คือ? </h1>
+                </div>
+            </div> <!-- End of banner-image-2 -->
+            <div class="content-bmr center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                <span style="font-size: 30px;font-weight: bold;">Step 1: BMR </span>
+                ย่อมาจาก (Basal Metabolic Rate) หรือเราสามารถเรียกได้ว่าเป็นอัตราการเผาผลาญพลังงานในแต่ละวัน
+                โดยค่าพลังงานนี้ร่างกายจะใช้ในการขับเคลื่อนระบบเเละควบคุมอวัยวะต่าง ๆ ในร่างกาย
+                เรามาหาค่าพลังงานที่ใช้ในส่วนนี้กันก่อน โดยการกรอกข้อมูลในเครื่องคำนวณด้านล่างนี้
+            </div>
+            <div class="form-bmr center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                <form action="">
+                    <div class="center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                        <label for="inputWeight" class="form-label">น้ำหนัก (kg.)</label>
+                        <input type="number" class="form-control" id="inputWeight" name="inputWeight" min="1" max="999"
+                            maxlength="3" autocomplete="off">
+                    </div>
+                    <div class="center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                        <label for="inputHeight" class="form-label">ส่วนสูง (cm.)</label>
+                        <input type="number" class="form-control" id="inputHeight" name="inputHeight" min="1" max="999"
+                            maxlength="3" autocomplete="off">
+                    </div>
+                    <div class="center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                        <label for="inputAge" class="form-label">อายุ</label>
+                        <input type="number" class="form-control" id="inputAge" name="inputAge" min="1" max="999"
+                            maxlength="3" autocomplete="off">
+                    </div>
+                    <div class="center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                        <input type="submit" class="btnHover input-form form-control" value="Calculate">
+                    </div>
+                    <div class="result-bmr center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                        <label for="">BMR ของคุณคือ (kcal)</label>
+                        <p>0</p>
+                    </div>
+                </form>
+            </div> <!-- End of form-bmr -->
+            <div class="content-tdee">
+                <span style="font-size: 30px;font-weight: bold;">Step 2: TDEE</span> ย่อมาจาก Total Daily Energy
+                Expenditure หรือ
+                ค่าของพลังงานที่ใช้กิจกรรมอื่นในแต่ละวัน
+                โดยเลือกจากกิจกรรมตามรายการด้านล่าง ดังนั้นค่าที่ออกมาจะได้ค่าของการเผาผลาญพลังงานที่เป็นค่าเพียว ๆ
+                เเละค่าจากการทำกิจกรรมร่วมกัน
+            </div>
+            <div class="form-tdee center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                <form action="">
+                    <section class="center radio-section">
+                        <div class="center radio-list">
+                            <div class="radio-item"><input type="radio" name="activities" id="act-1" autocomplete="off">
+                                <label c for="act-1">ทำงานแบบนั่งอยู่กับที่</label>
+                            </div>
+                            <div class="radio-item"><input type="radio" name="activities" id="act-2" autocomplete="off">
+                                <label for="act-2">ออกกำลังกายหรือเล่นกีฬา แบบเบา ๆ 1-3 วันต่อสัปดาห์</label>
+                            </div>
+                            <div class="radio-item"> <input type="radio" name="activities" id="act-3"
+                                    autocomplete="off">
+                                <label for="act-3">ออกกำลังกายหรือเล่นกีฬา ความหนักปานกลาง 3-5 วันต่อสัปดาห์
+                            </div>
+                            <div class="radio-item"> <input type="radio" name="activities" id="act-4"
+                                    autocomplete="off">
+                                <label for="act-4">ออกกำลังกายหรือเล่นกีฬา หนัก 6-7 วันต่อสัปดาห์</label>
+                            </div>
+                            <div class="radio-item"> <input type="radio" name="activities" id="act-5"
+                                    autocomplete="off">
+                                <label for="act-5">ออกกำลังกายหรือเล่นกีฬา หนัก แบบการซ้อมเพื่อแข่งขัน
+                                    เป็นประจำทุกวัน</label>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <div class="result-bmr center col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                        <label for="">TDEE ของคุณคือ (kcal)</label>
+                        <p>0</p>
+                    </div>
+                </form>
+            </div> <!-- end of form-tdee -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</body>
+
+</html>
